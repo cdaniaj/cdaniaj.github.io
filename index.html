@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier Digital - MDF & Xicaras Personalizadas</title>
+    <title>Kah Atelier - Peças Personalizadas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,11 +14,14 @@
     <!-- Navegação -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">🎨 Atelier Digital</div>
+            <div class="logo-container">
+                <img src="logo.svg" alt="Logo Kah Atelier" class="logo-img">
+                <span class="logo-text">Kah Atelier</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#combos">Combos</a></li>
+                <li><a href="#montar-combo">Montar Combo</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -27,8 +31,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Bem-vindo ao Atelier Digital</h1>
-                <p>Produtos em MDF personalizados com qualidade e criatividade</p>
+                <img src="logo.svg" alt="Logo Kah Atelier" class="hero-logo">
+                <h1>Bem-vindo à Kah Atelier</h1>
+                <p>Peças personalizadas feitas com amor e criatividade</p>
                 <a href="#produtos" class="btn btn-primary">Explore Nossos Produtos</a>
             </div>
         </div>
@@ -38,7 +43,7 @@
     <section id="sobre" class="sobre">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Somos um atelier digital especializado em criar produtos em MDF personalizados. Com foco em qualidade e criatividade, oferecemos xicaras personalizadas, decorações, combos especiais e muito mais para tornar seus momentos ainda mais especiais.</p>
+            <p>Na Kah Atelier, transformamos suas ideias em produtos personalizados únicos. Cada peça é cuidadosamente criada para tornar seus momentos especiais ainda mais memoráveis. Do íntimo ao corporativo, temos a criação perfeita para você.</p>
         </div>
     </section>
 
@@ -48,95 +53,152 @@
             <h2>Nossos Produtos</h2>
             <div class="produtos-grid">
                 <div class="produto-card">
+                    <div class="produto-icon">🎁</div>
+                    <h3>Caixa de Joia</h3>
+                    <p>Caixas personalizadas em MDF para presentes especiais.</p>
+                    <span class="preco">A partir de R$ 45,00</span>
+                </div>
+                <div class="produto-card">
                     <div class="produto-icon">☕</div>
-                    <h3>Xicaras Personalizadas</h3>
-                    <p>Xicaras em cerâmica com designs personalizados. Perfeitas para presentes e lembrança.</p>
+                    <h3>Xícara Personalizada</h3>
+                    <p>Xícaras em cerâmica com designs únicos e exclusivos.</p>
                     <span class="preco">A partir de R$ 35,00</span>
                 </div>
                 <div class="produto-card">
-                    <div class="produto-icon">🎁</div>
-                    <h3>Itens em MDF</h3>
-                    <p>Caixas, placas decorativas, suportes e muito mais em MDF de qualidade.</p>
-                    <span class="preco">A partir de R$ 25,00</span>
+                    <div class="produto-icon">🧸</div>
+                    <h3>Urso de Pelúcia</h3>
+                    <p>Ursinhos fofos personalizáveis com bordado ou impressão.</p>
+                    <span class="preco">A partir de R$ 60,00</span>
                 </div>
                 <div class="produto-card">
-                    <div class="produto-icon">🖼️</div>
-                    <h3>Personalizações</h3>
-                    <p>Customize seus produtos com logos, nomes, datas e designs exclusivos.</p>
-                    <span class="preco">Orçamento sob consulta</span>
+                    <div class="produto-icon">📷</div>
+                    <h3>Foto Impressa</h3>
+                    <p>Fotos em papel premium com acabamento profissional.</p>
+                    <span class="preco">A partir de R$ 20,00</span>
                 </div>
                 <div class="produto-card">
-                    <div class="produto-icon">📦</div>
-                    <h3>Embalagem Premium</h3>
-                    <p>Embalagens especiais para presentear com estilo e elegância.</p>
-                    <span class="preco">A partir de R$ 10,00</span>
+                    <div class="produto-icon">🍫</div>
+                    <h3>Bombons Personalizados</h3>
+                    <p>Caixa de bombons gourmet com embalagem customizada.</p>
+                    <span class="preco">A partir de R$ 50,00</span>
                 </div>
                 <div class="produto-card">
                     <div class="produto-icon">✨</div>
-                    <h3>Acabamentos Especiais</h3>
-                    <p>Pintura, gravação, sublimação e outros acabamentos premium.</p>
-                    <span class="preco">Sob consulta</span>
-                </div>
-                <div class="produto-card">
-                    <div class="produto-icon">💎</div>
-                    <h3>Coleções Exclusivas</h3>
-                    <p>Edições limitadas e coleções temáticas atualizadas regularmente.</p>
-                    <span class="preco">Variável</span>
+                    <h3>Embalagem Premium</h3>
+                    <p>Caixas e embalagens especiais para completar seu presente.</p>
+                    <span class="preco">A partir de R$ 15,00</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Combos -->
-    <section id="combos" class="combos">
+    <!-- Montar Combo Interativo -->
+    <section id="montar-combo" class="montar-combo">
         <div class="container">
-            <h2>Combos Especiais</h2>
-            <p class="combos-intro">Aproveite nossas ofertas incríveis em combos personalizados</p>
-            <div class="combos-grid">
-                <div class="combo-card">
-                    <h3>Combo Presente Perfeito</h3>
-                    <ul class="combo-items">
-                        <li>✓ 1 Xicara Personalizada</li>
-                        <li>✓ 1 Pires Decorado</li>
-                        <li>✓ 1 Colher Personalizada</li>
-                        <li>✓ Embalagem Premium</li>
-                    </ul>
-                    <div class="combo-price">
-                        <span class="de">De: R$ 95,00</span>
-                        <span class="por">Por: R$ 75,00</span>
+            <h2>🎨 Crie Seu Combo Personalizado</h2>
+            <p class="combo-intro">Combine as peças que você gostaria de incluir em seu presente especial</p>
+            
+            <div class="combo-builder">
+                <!-- Coluna de Seleção -->
+                <div class="combo-selecao">
+                    <h3>Selecione as Peças</h3>
+                    <div class="pecas-disponiveis">
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Caixa de Joia" data-preco="45">
+                            <span class="peca-label">
+                                <span class="peca-icon">🎁</span>
+                                <span class="peca-texto">
+                                    <strong>Caixa de Joia</strong>
+                                    <small>R$ 45,00</small>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Xícara Personalizada" data-preco="35">
+                            <span class="peca-label">
+                                <span class="peca-icon">☕</span>
+                                <span class="peca-texto">
+                                    <strong>Xícara Personalizada</strong>
+                                    <small>R$ 35,00</small>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Urso de Pelúcia" data-preco="60">
+                            <span class="peca-label">
+                                <span class="peca-icon">🧸</span>
+                                <span class="peca-texto">
+                                    <strong>Urso de Pelúcia</strong>
+                                    <small>R$ 60,00</small>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Foto Impressa" data-preco="20">
+                            <span class="peca-label">
+                                <span class="peca-icon">📷</span>
+                                <span class="peca-texto">
+                                    <strong>Foto Impressa</strong>
+                                    <small>R$ 20,00</small>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Bombons Personalizados" data-preco="50">
+                            <span class="peca-label">
+                                <span class="peca-icon">🍫</span>
+                                <span class="peca-texto">
+                                    <strong>Bombons Personalizados</strong>
+                                    <small>R$ 50,00</small>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="peca-checkbox">
+                            <input type="checkbox" class="peca-input" data-nome="Embalagem Premium" data-preco="15">
+                            <span class="peca-label">
+                                <span class="peca-icon">✨</span>
+                                <span class="peca-texto">
+                                    <strong>Embalagem Premium</strong>
+                                    <small>R$ 15,00</small>
+                                </span>
+                            </span>
+                        </label>
                     </div>
-                    <button class="btn btn-secondary">Solicitar Orçamento</button>
                 </div>
-                <div class="combo-card destaque">
-                    <span class="badge">Mais Popular</span>
-                    <h3>Combo Profissional</h3>
-                    <ul class="combo-items">
-                        <li>✓ 2 Xicaras Personalizadas</li>
-                        <li>✓ 2 Pires Decorados</li>
-                        <li>✓ Caixa em MDF Personalizada</li>
-                        <li>✓ Embalagem Premium Especial</li>
-                        <li>✓ Cartão de Visita</li>
-                    </ul>
-                    <div class="combo-price">
-                        <span class="de">De: R$ 200,00</span>
-                        <span class="por">Por: R$ 150,00</span>
+                
+                <!-- Coluna de Preview do Combo -->
+                <div class="combo-preview">
+                    <div class="combo-card-build">
+                        <h3>Seu Combo</h3>
+                        <div class="combo-items-list" id="comboList">
+                            <p class="empty-combo">Selecione as peças para montar seu combo</p>
+                        </div>
+                        <div class="combo-resumo">
+                            <div class="resumo-linha">
+                                <span>Quantidade de Peças:</span>
+                                <strong id="qtdPecas">0</strong>
+                            </div>
+                            <div class="resumo-linha">
+                                <span>Valor Total:</span>
+                                <strong id="precoTotal">R$ 0,00</strong>
+                            </div>
+                            <div class="resumo-desconto" id="resumoDesconto" style="display: none;">
+                                <span>Desconto Combo (-10%):</span>
+                                <strong id="desconto" class="desconto-valor">-R$ 0,00</strong>
+                            </div>
+                            <hr>
+                            <div class="resumo-linha resumo-final">
+                                <span>Valor Final:</span>
+                                <strong id="precoFinal">R$ 0,00</strong>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-solicitar">Solicitar Orçamento</button>
                     </div>
-                    <button class="btn btn-secondary">Solicitar Orçamento</button>
-                </div>
-                <div class="combo-card">
-                    <h3>Combo Casamento</h3>
-                    <ul class="combo-items">
-                        <li>✓ 4 Xicaras Personalizadas</li>
-                        <li>✓ 4 Pires Decorados</li>
-                        <li>✓ Caixa em MDF Luxo</li>
-                        <li>✓ Embalagem Premium</li>
-                        <li>✓ Convite Personalizado</li>
-                    </ul>
-                    <div class="combo-price">
-                        <span class="de">De: R$ 350,00</span>
-                        <span class="por">Por: R$ 280,00</span>
-                    </div>
-                    <button class="btn btn-secondary">Solicitar Orçamento</button>
                 </div>
             </div>
         </div>
@@ -145,11 +207,11 @@
     <!-- Diferenciais -->
     <section id="diferenciais" class="diferenciais">
         <div class="container">
-            <h2>Por que escolher a gente?</h2>
+            <h2>Por que escolher a Kah Atelier?</h2>
             <div class="diferenciais-grid">
                 <div class="diferencial-item">
-                    <h3>🎯 Personalizado</h3>
-                    <p>Cada produto é feito especialmente para você com seus desejos em mente.</p>
+                    <h3>💚 Personalizado</h3>
+                    <p>Cada combo é único e feito especialmente para você.</p>
                 </div>
                 <div class="diferencial-item">
                     <h3>⚡ Rápido</h3>
@@ -157,11 +219,11 @@
                 </div>
                 <div class="diferencial-item">
                     <h3>💰 Preço Justo</h3>
-                    <p>Melhor custo-benefício do mercado com qualidade garantida.</p>
+                    <p>Melhor custo-benefício com desconto para combos!</p>
                 </div>
                 <div class="diferencial-item">
                     <h3>🎨 Criatividade</h3>
-                    <p>Ideias originais e designs exclusivos para seus produtos.</p>
+                    <p>Designs originais e exclusivos para seus presentes.</p>
                 </div>
             </div>
         </div>
@@ -173,27 +235,27 @@
             <h2>Alguns de Nossos Trabalhos</h2>
             <div class="galeria-grid">
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
-                    <p>Xicaras Personalizadas - Café</p>
+                    <div class="galeria-placeholder">📷</div>
+                    <p>Xícaras Personalizadas</p>
                 </div>
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
+                    <div class="galeria-placeholder">📷</div>
                     <p>Combo Casamento Luxo</p>
                 </div>
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
+                    <div class="galeria-placeholder">📷</div>
                     <p>Caixas em MDF Decoradas</p>
                 </div>
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
-                    <p>Xicaras com Nomes</p>
+                    <div class="galeria-placeholder">📷</div>
+                    <p>Ursinhos Personalizados</p>
                 </div>
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
+                    <div class="galeria-placeholder">📷</div>
                     <p>Presentes Corporativos</p>
                 </div>
                 <div class="galeria-item">
-                    <div class="galeria-placeholder">📸</div>
+                    <div class="galeria-placeholder">📷</div>
                     <p>Embalagens Premium</p>
                 </div>
             </div>
@@ -212,11 +274,11 @@
                 </div>
                 <div class="info-item">
                     <h3>📧 Email</h3>
-                    <p><a href="mailto:contato@atelierdigital.com.br">contato@atelierdigital.com.br</a></p>
+                    <p><a href="mailto:contato@kahatelier.com.br">contato@kahatelier.com.br</a></p>
                 </div>
                 <div class="info-item">
                     <h3>📍 Instagram</h3>
-                    <p><a href="https://instagram.com/atelierdigital" target="_blank">@atelierdigital</a></p>
+                    <p><a href="https://instagram.com/kahatelier" target="_blank">@kahatelier</a></p>
                 </div>
             </div>
             <form class="contato-form">
@@ -231,8 +293,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Atelier Digital. Todos os direitos reservados.</p>
-            <p>Feito com ❤️ para você</p>
+            <p>&copy; 2026 Kah Atelier. Todos os direitos reservados.</p>
+            <p>Feito com 💚 para você</p>
         </div>
     </footer>
 

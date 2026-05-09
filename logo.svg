@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#B8236B" stroke-width="2"/>
+  
+  <!-- Flower Shape (hearts as petals) -->
+  <g id="flower">
+    <!-- Top petal -->
+    <path d="M 100 40 Q 85 50 85 65 Q 85 75 100 85 Q 115 75 115 65 Q 115 50 100 40" fill="#B8236B"/>
+    <!-- Top-right petal -->
+    <path d="M 130 60 Q 130 45 120 40 Q 110 35 102 45 Q 100 55 110 70 Q 120 75 130 60" fill="#B8236B"/>
+    <!-- Bottom-right petal -->
+    <path d="M 130 140 Q 130 155 120 160 Q 110 165 102 155 Q 100 145 110 130 Q 120 125 130 140" fill="#B8236B"/>
+    <!-- Bottom petal -->
+    <path d="M 100 160 Q 85 150 85 135 Q 85 125 100 115 Q 115 125 115 135 Q 115 150 100 160" fill="#B8236B"/>
+    <!-- Bottom-left petal -->
+    <path d="M 70 140 Q 70 155 80 160 Q 90 165 98 155 Q 100 145 90 130 Q 80 125 70 140" fill="#B8236B"/>
+    <!-- Top-left petal -->
+    <path d="M 70 60 Q 70 45 80 40 Q 90 35 98 45 Q 100 55 90 70 Q 80 75 70 60" fill="#B8236B"/>
+    <!-- Center circle -->
+    <circle cx="100" cy="100" r="12" fill="#9FD986"/>
+  </g>
+  
+  <!-- Text: KAH -->
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#B8236B" letter-spacing="2">KAH</text>
+  
+  <!-- Text: ATÉLIE -->
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#B8236B" letter-spacing="1">ATÉLIE</text>
+</svg>
