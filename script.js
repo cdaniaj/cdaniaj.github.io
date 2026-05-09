@@ -101,7 +101,7 @@ btnSolicitar.addEventListener('click', function() {
     const total = document.getElementById('precoFinal').textContent;
     
     const mensagem = `Olá! Gostaria de solicitar um orçamento para o seguinte combo: ${listaCombo}. Valor total: ${total}.`;
-    const urlWhatsApp = `https://wa.me/5585987654321?text=${encodeURIComponent(mensagem)}`;
+    const urlWhatsApp = `https://wa.me/5511966041294?text=${encodeURIComponent(mensagem)}`;
     
     window.open(urlWhatsApp, '_blank');
 });
@@ -146,4 +146,4 @@ window.addEventListener('scroll', () => {
 });
 
 // Log de confirmação
-console.log('💚 Kah Atelier - Website carregado com sucesso!');
+console.log('💚 Kah Atelie - Website carregado com sucesso!');
