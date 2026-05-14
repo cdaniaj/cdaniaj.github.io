@@ -1,306 +1,735 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kah Atelie - Peças Personalizadas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Carlos Daniel | Software Engineer
+    </title>
+
+    <meta name="description"
+        content="Portfólio de Carlos Daniel — Engenheiro de Software com experiência em sistemas corporativos, arquitetura, chatbots e Inteligência Artificial." />
+
+    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <!-- Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo-container">
-                <!-- Usa logo.png quando disponível; caso contrário, carrega logo.svg como fallback -->
-                <img src="logo.png" alt="Logo Kah Atelie" class="logo-img" onerror="this.onerror=null;this.src='logo.png'">
-                <span class="logo-text">Kah Atelie</span>
+
+    <!-- BACKGROUND -->
+
+    <div class="bg-grid"></div>
+    <div class="bg-blur blur-1"></div>
+    <div class="bg-blur blur-2"></div>
+
+    <!-- HEADER -->
+
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Carlos Daniel
             </div>
+
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#montar-combo">Montar Combo</a></li>
+
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#certificados">Certificados</a></li>
                 <li><a href="#contato">Contato</a></li>
+
             </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="logo.png" alt="Logo Kah Atelie" class="hero-logo" onerror="this.onerror=null;this.src='logo.png'">
-                <div class="hero-text">
-                    <h1>Bem-vindo à Kah Atelie</h1>
-                    <p>Peças personalizadas feitas com amor e criatividade</p>
-                    <a href="#produtos" class="btn btn-primary">Explore Nossos Produtos</a>
-                </div>
+            <div class="language-switch">
+
+                <button onclick="changeLanguage('pt')">
+                    PT
+                </button>
+
+                <button onclick="changeLanguage('en')">
+                    EN
+                </button>
+
             </div>
-        </div>
-    </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Na Kah Atelie, transformamos suas ideias em produtos personalizados únicos. Cada peça é cuidadosamente criada para tornar seus momentos especiais ainda mais memoráveis. Do íntimo ao corporativo, temos a criação perfeita para você.</p>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Produtos -->
-    <section id="produtos" class="produtos">
-        <div class="container">
-            <h2>Nossos Produtos</h2>
-            <div class="produtos-grid">
-                <div class="produto-card">
-                    <div class="produto-icon">🎁</div>
-                    <h3>Caixa de Joia</h3>
-                    <p>Caixas personalizadas em MDF para presentes especiais.</p>
-                    <span class="preco">A partir de R$ 45,00</span>
+        <!-- HERO CONTENT -->
+
+        <div class="hero-container">
+
+            <div class="hero-left">
+
+                <span class="hero-badge">
+                    Software Engineer • AI Enthusiast
+                </span>
+
+                <h1>
+                    Engenharia de Software & IA aplicada.
+                </h1>
+
+                <p class="hero-description">
+
+                    Desenvolvedor de software com mais de 6 anos
+                    de experiência atuando em aplicações escaláveis,
+                    plataformas financeiras, modernização de sistemas,
+                    chatbots e arquitetura corporativa.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="https://github.com/cdaniaj" target="_blank" class="btn-primary">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/carlos-daniel-araujo-490283156/" target="_blank"
+                        class="btn-secondary">
+                        LinkedIn
+                    </a>
+
                 </div>
-                <div class="produto-card">
-                    <div class="produto-icon">☕</div>
-                    <h3>Xícara Personalizada</h3>
-                    <p>Xícaras em cerâmica com designs únicos e exclusivos.</p>
-                    <span class="preco">A partir de R$ 35,00</span>
-                </div>
-                <div class="produto-card">
-                    <div class="produto-icon">🧸</div>
-                    <h3>Urso de Pelúcia</h3>
-                    <p>Ursinhos fofos personalizáveis com bordado ou impressão.</p>
-                    <span class="preco">A partir de R$ 60,00</span>
-                </div>
-                <div class="produto-card">
-                    <div class="produto-icon">📷</div>
-                    <h3>Foto Impressa</h3>
-                    <p>Fotos em papel premium com acabamento profissional.</p>
-                    <span class="preco">A partir de R$ 20,00</span>
-                </div>
-                <div class="produto-card">
-                    <div class="produto-icon">🍫</div>
-                    <h3>Bombons Personalizados</h3>
-                    <p>Caixa de bombons gourmet com embalagem customizada.</p>
-                    <span class="preco">A partir de R$ 50,00</span>
-                </div>
-                <div class="produto-card">
-                    <div class="produto-icon">✨</div>
-                    <h3>Embalagem Premium</h3>
-                    <p>Caixas e embalagens especiais para completar seu presente.</p>
-                    <span class="preco">A partir de R$ 15,00</span>
-                </div>
+
             </div>
+
+            <!-- HERO CARD -->
+
+            <div class="hero-card">
+
+                <div class="hero-card-header">
+
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                </div>
+
+                <div class="terminal-content">
+
+                    <p>
+                        <span class="terminal-label">
+                            Função:
+                        </span>
+
+                        Software Engineer
+                    </p>
+
+                    <p>
+                        <span class="terminal-label">
+                            Experiência:
+                        </span>
+
+                        6+ anos
+                    </p>
+
+                    <p>
+                        <span class="terminal-label">
+                            Empregado em:
+                        </span>
+
+                        BRQ Digital Solutions | Itaú
+                    </p>
+
+
+                    <p>
+                        <span class="terminal-label">
+                            Stack:
+                        </span>
+                        React • Angular • WebViews • Python • Java 11 • Machine Learning
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
+
+    </header>
+
+    <!-- SOBRE -->
+
+    <section class="section" id="sobre">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                01
+            </span>
+
+            <h2>
+                Sobre Mim
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="glass-card">
+
+                <h3>
+                    Engenharia de Software
+                </h3>
+
+                <p>
+                    Tenho 25 anos e mais de 6 anos de experiência
+                    na área de desenvolvimento de software,
+                    participando da construção, sustentação
+                    e evolução de sistemas corporativos.
+                </p>
+
+                <p>
+                    Atuei em startup do setor de pagamentos
+                    e também na BRQ Digital Solutions,
+                    alocado no Banco Itaú.
+                </p>
+
+            </div>
+
+            <div class="glass-card">
+
+                <h3>
+                    Projetos Corporativos
+                </h3>
+
+                <p>
+                    Participei do desenvolvimento de soluções
+                    envolvendo Hub de Segurança,
+                    jornadas de chatbot,
+                    sustentação de aplicações críticas
+                    e modernização de sistemas.
+                </p>
+
+                <p>
+                    Atualmente atuo na evolução do
+                    chatbot unificado do Itaú.
+                </p>
+
+            </div>
+
+            <div class="glass-card">
+
+                <h3>
+                    Inteligência Artificial
+                </h3>
+
+                <p>
+                    Estudo Inteligência Artificial aplicada
+                    com foco em Machine Learning,
+                    Random Forest e Visão Computacional.
+                </p>
+
+                <p>
+                    Busco evolução contínua como
+                    engenheiro de software e especialista em IA.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- Montar Combo Interativo -->
-    <section id="montar-combo" class="montar-combo">
-        <div class="container">
-            <h2>🎨 Crie Seu Combo Personalizado</h2>
-            <p class="combo-intro">Combine as peças que você gostaria de incluir em seu presente especial</p>
-            
-            <div class="combo-builder">
-                <!-- Coluna de Seleção -->
-                <div class="combo-selecao">
-                    <h3>Selecione as Peças</h3>
-                    <div class="pecas-disponiveis">
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Caixa de Joia" data-preco="45">
-                            <span class="peca-label">
-                                <span class="peca-icon">🎁</span>
-                                <span class="peca-texto">
-                                    <strong>Caixa de Joia</strong>
-                                    <small>R$ 45,00</small>
-                                </span>
-                            </span>
-                        </label>
-                        
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Xícara Personalizada" data-preco="35">
-                            <span class="peca-label">
-                                <span class="peca-icon">☕</span>
-                                <span class="peca-texto">
-                                    <strong>Xícara Personalizada</strong>
-                                    <small>R$ 35,00</small>
-                                </span>
-                            </span>
-                        </label>
-                        
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Urso de Pelúcia" data-preco="60">
-                            <span class="peca-label">
-                                <span class="peca-icon">🧸</span>
-                                <span class="peca-texto">
-                                    <strong>Urso de Pelúcia</strong>
-                                    <small>R$ 60,00</small>
-                                </span>
-                            </span>
-                        </label>
-                        
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Foto Impressa" data-preco="20">
-                            <span class="peca-label">
-                                <span class="peca-icon">📷</span>
-                                <span class="peca-texto">
-                                    <strong>Foto Impressa</strong>
-                                    <small>R$ 20,00</small>
-                                </span>
-                            </span>
-                        </label>
-                        
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Bombons Personalizados" data-preco="50">
-                            <span class="peca-label">
-                                <span class="peca-icon">🍫</span>
-                                <span class="peca-texto">
-                                    <strong>Bombons Personalizados</strong>
-                                    <small>R$ 50,00</small>
-                                </span>
-                            </span>
-                        </label>
-                        
-                        <label class="peca-checkbox">
-                            <input type="checkbox" class="peca-input" data-nome="Embalagem Premium" data-preco="15">
-                            <span class="peca-label">
-                                <span class="peca-icon">✨</span>
-                                <span class="peca-texto">
-                                    <strong>Embalagem Premium</strong>
-                                    <small>R$ 15,00</small>
-                                </span>
-                            </span>
-                        </label>
+    <!-- SKILLS -->
+
+    <section class="section" id="skills">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                02
+            </span>
+
+            <h2>
+                Stack Tecnológica
+            </h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h3>
+                    Frontend
+                </h3>
+
+                <div class="tags">
+
+                    <span>React</span>
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+
+                </div>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>
+                    Backend
+                </h3>
+
+                <div class="tags">
+
+                    <span>Java 8</span>
+                    <span>Java 11</span>
+                    <span>Spring Boot</span>
+                    <span>REST APIs</span>
+                    <span>Python</span>
+
+                </div>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>
+                    Inteligência Artificial
+                </h3>
+
+                <div class="tags">
+
+                    <span>Machine Learning</span>
+                    <span>Random Forest</span>
+                    <span>Computer Vision</span>
+
+                </div>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>
+                    Arquitetura
+                </h3>
+
+                <div class="tags">
+
+                    <span>Microsserviços</span>
+                    <span>Integração</span>
+                    <span>Sistemas Corporativos</span>
+                    <span>Escalabilidade</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCIA -->
+
+    <section class="section" id="experiencia">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                03
+            </span>
+
+            <h2>
+                Experiência
+            </h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        BRQ Digital Solutions
+                    </h3>
+                    <span style="color: cadetblue;">out de 2025 - o momento • 8 meses</span>
+
+                    <span>
+                        Itaú Unibanco • Software Engineer
+                    </span>
+
+                    <p>
+                        Desenvolvimento e sustentação
+                        de aplicações corporativas,
+                        evolução arquitetural,
+                        modernização de chatbot unificado
+                        e manutenção de sistemas críticos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Alcance de objetivos pessoais
+                    </h3>
+                    <span style="color: cadetblue;">out de 2024 - out de 2025 • 1 ano 1 mes</span>
+
+                    <span>
+                        Pausa na carreira
+                    </span>
+
+                    <p>
+                        Intercambio intensivo na Australia para o aprendizado de inglês e vivência internacional.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        BRQ Digital Solutions
+                    </h3>
+                    <span style="color: cadetblue;">jan de 2022 - out de 2024 • 2 anos 10 meses</span>
+
+                    <span>
+                        Itaú Unibanco • Software Engineer
+                    </span>
+
+                    <p>
+                        <b>Squad Hub de Segurança</b>
+                        <br/>
+                        <u>Server-Driven UI:</u> Criação de serviço para construção de SPAs via JSON.
+                        <br/>
+                        <u>Qualidade:</u> Elevação da cobertura de testes de 40% para 90%, com redução de bugs.
+                        <br/>
+                        <u>Eficiência:</u> Otimização do pipeline de desenvolvimento e foco total em acessibilidade.
+                        <br/><br/>
+                        <b>Squad Flow Manager</b>
+                        <br/>
+                        <u>Chatbots:</u> Desenvolvimento do roteirizador de jornadas conversacionais.
+                        <br/>
+                        <u>Micro-frontends:</u> Manutenção e evolução de arquitetura modular em Angular.
+                        <br/>
+                        <u>Performance:</u> Implementação de sub-rotas para mitigar gargalos de infraestrutura.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Turbo MKT - Pagamentos online
+                    </h3>
+                    <span style="color: cadetblue;">jul de 2019 - dez de 2021 • 2 anos 6 meses</span>
+
+                    <span>
+                        Fullstack Junior • Fullstack Pleno
+                    </span>
+
+                    <p>
+                        - Criação e implementação de soluções back-end (Java + Spring Boot) e front-end (Angular 7). 
+                        <br/>
+                        - Integração entre aplicação com gateway de pagamento.
+                        <br/>
+                        - Consumo de objetos armazenados em S3. 
+                        <br/>
+                        - Prototipação de UIs modernas.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Projeto128
+                    </h3>
+                    <span style="color: cadetblue;">jan de 2017 - marc de 2018 • 1 ano 3 meses</span>
+
+                    <span>
+                        Desenvolvedor Java Junior
+                    </span>
+
+                    <p>
+                        Trabalhei com foco em Java SE, provendo suporte e servicos para sistemas ponto de vendas.
+                        <br/>
+                        <u>Tecnologias:</u> Java EE, Java SE, PostgreSQL.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section" id="projetos">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                04
+            </span>
+
+            <h2 data-lang="projects_title">
+                Principais projetos
+            </h2>
+
+        </div>
+
+        <div class="carousel-wrapper">
+
+
+            <div class="carousel" id="projectsCarousel">
+
+                <a href="https://github.com/cdaniaj/ngx-dynamic-pages" target="_blank" class="project-carousel-card">
+
+                    <img src="assets/dynamic-pages-front.png" alt="ngx dynamic pages">
+
+                    <div class="project-carousel-content">
+
+                        <span class="project-category">
+                            Angular • Open Source
+                        </span>
+
+                        <span class="project-category">
+                            Arquitetura de frontend
+                        </span>
+
+                        <h3>
+                            ngx-dynamic-pages
+                        </h3>
+
+                        <p data-lang="project_1_desc">
+
+                            Biblioteca open source para renderização
+                            dinâmica de páginas SPA baseada em JSON.
+
+                        </p>
                     </div>
-                </div>
-                
-                <!-- Coluna de Preview do Combo -->
-                <div class="combo-preview">
-                    <div class="combo-card-build">
-                        <h3>Seu Combo</h3>
-                        <div class="combo-items-list" id="comboList">
-                            <p class="empty-combo">Selecione as peças para montar seu combo</p>
-                        </div>
-                        <div class="combo-resumo">
-                            <div class="resumo-linha">
-                                <span>Quantidade de Peças:</span>
-                                <strong id="qtdPecas">0</strong>
-                            </div>
-                            <div class="resumo-linha">
-                                <span>Valor Total:</span>
-                                <strong id="precoTotal">R$ 0,00</strong>
-                            </div>
-                            <div class="resumo-desconto" id="resumoDesconto" style="display: none;">
-                                <span>Desconto Combo (-10%):</span>
-                                <strong id="desconto" class="desconto-valor">-R$ 0,00</strong>
-                            </div>
-                            <hr>
-                            <div class="resumo-linha resumo-final">
-                                <span>Valor Final:</span>
-                                <strong id="precoFinal">R$ 0,00</strong>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary btn-solicitar">Solicitar Orçamento</button>
+                </a>
+
+
+                <a href="https://github.com/cdaniaj/image-process-api" target="_blank" class="project-carousel-card">
+
+                    <img src="assets/breast-cancer-sample-solution.png" alt="machine learning">
+
+                    <div class="project-carousel-content">
+
+                        <span class="project-category">
+                            IA • Visao computacional
+                        </span>
+                        <span class="project-category">
+                            Random Forest • Logistic Regression
+                        </span>
+
+                        <h3>
+                            Breast Cancer Detection
+                        </h3>
+
+                        <p data-lang="project_3_desc">
+
+                            API dedicada ao suporte de detecção de câncer de mama
+                            utilizando técnicas de Machine Learning e Visão Computacional.
+
+                        </p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
+
     </section>
 
-    <!-- Diferenciais -->
-    <section id="diferenciais" class="diferenciais">
-        <div class="container">
-            <h2>Por que escolher a Kah Atelie?</h2>
-            <div class="diferenciais-grid">
-                <div class="diferencial-item">
-                    <h3>💚 Personalizado</h3>
-                    <p>Cada combo é único e feito especialmente para você.</p>
-                </div>
-                <div class="diferencial-item">
-                    <h3>⚡ Rápido</h3>
-                    <p>Prazos curtos e entrega dentro do prazo prometido.</p>
-                </div>
-                <div class="diferencial-item">
-                    <h3>💰 Preço Justo</h3>
-                    <p>Melhor custo-benefício com desconto para combos!</p>
-                </div>
-                <div class="diferencial-item">
-                    <h3>🎨 Criatividade</h3>
-                    <p>Designs originais e exclusivos para seus presentes.</p>
-                </div>
+    <!-- CERTIFICADOS -->
+
+    <section class="section" id="certificados">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                05
+            </span>
+
+            <h2>
+                Principais certificados
+            </h2>
+
+        </div>
+
+        <div class="carousel-wrapper">
+
+            <button class="carousel-btn" id="prevBtn">
+                ←
+            </button>
+
+            <div class="carousel" id="carousel">
+
+                <a href="#" class="certificate-card">
+
+                    <img src="assets/genai-databricks.png" alt="Certificado">
+
+                    <div class="certificate-info">
+
+                        <h3>
+                            Angular + RxJS
+                        </h3>
+
+                        <p>
+                            Arquitetura frontend moderna
+                            utilizando Angular.
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="#" class="certificate-card">
+
+                    <img src="assets/usp-intrd-ai.png" alt="Certificado">
+
+                    <div class="certificate-info">
+
+                        <h3>
+                            AWS EC2
+                        </h3>
+
+                        <p>
+                            Infraestrutura cloud
+                            e computação escalável.
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="#" class="certificate-card">
+
+                    <img src="images/cert3.jpg" alt="Certificado">
+
+                    <div class="certificate-info">
+
+                        <h3>
+                            Machine Learning
+                        </h3>
+
+                        <p>
+                            Fundamentos de IA
+                            e análise de dados.
+                        </p>
+
+                    </div>
+
+                </a>
+
             </div>
+
+            <button class="carousel-btn" id="nextBtn">
+                →
+            </button>
+
         </div>
+
     </section>
 
-    <!-- Portfólio/Galeria -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Alguns de Nossos Trabalhos</h2>
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Xícaras Personalizadas</p>
-                </div>
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Combo Casamento Luxo</p>
-                </div>
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Caixas em MDF Decoradas</p>
-                </div>
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Ursinhos Personalizados</p>
-                </div>
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Presentes Corporativos</p>
-                </div>
-                <div class="galeria-item">
-                    <div class="galeria-placeholder">📷</div>
-                    <p>Embalagens Premium</p>
-                </div>
+    <!-- CONTATO -->
+
+    <section class="section" id="contato">
+
+        <div class="section-title">
+
+            <span class="section-number">
+                06
+            </span>
+
+            <h2>
+                Contato
+            </h2>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>
+                Vamos conversar.
+            </h3>
+
+            <p>
+                Interessado em engenharia de software,
+                arquitetura e Inteligência Artificial.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:carlosdaniels.araujo@gmail.com">
+                    Email
+                </a>
+
+                <a href="https://github.com/cdaniaj" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/carlos-daniel-araujo-490283156/" target="_blank">
+                    LinkedIn
+                </a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2>Fale Conosco</h2>
-            <p>Tem alguma dúvida ou quer fazer um pedido? Entre em contato conosco!</p>
-            <div class="contato-info">
-                <div class="info-item">
-                    <h3>📱 WhatsApp</h3>
-                    <p><a href="https://wa.me/5511966041294" target="_blank">+55 11 96604-1294</a></p>
-                </div>
-                <div class="info-item">
-                    <h3>📧 Email</h3>
-                    <p><a href="mailto:contato@kahatelier.com.br">contato@kahatelier.com.br</a></p>
-                </div>
-                <div class="info-item">
-                    <h3>📍 Instagram</h3>
-                    <p><a href="https://www.instagram.com/kah_atelie/" target="_blank">@kah_atelie</a></p>
-                </div>
-            </div>
-            <form class="contato-form">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu Email" required>
-                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+    <!-- FOOTER -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Kah Atelie. Todos os direitos reservados.</p>
-            <p>Feito com 💚 para você</p>
-        </div>
+    <footer>
+
+        <p>
+            Carlos Daniel © 2026
+        </p>
+
+        <span>
+            Software Engineer • AI Enthusiast
+        </span>
+
     </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
